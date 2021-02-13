@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var x = document.getElementById("moshu");
+        x.addEventListener("click",myFunction);
+        
+       function myFunction(){
+            document.getElementById("demo").innerHTML = "变魔术";
+            document.getElementById("b").href = "https://www.ixigua.com/";
+            document.getElementById("b").style.color = "red";
+        }
+
+        
+        
+    </script>
+</head>
+<body>
+    <button type="button" onclick="alert('hahah')">hahaha</button>
+    <p id="demo">
+    注意看
+    </p>
+    <button type="button" id="moshu">点击有魔术</button>
+
+    <a id="b" href="https://www.bilibili.com/">bilibili</a>
+
+    <button>事件</button>
+
+    <!-- 弹出警告框 -->
+    <script>
+        window.alert(5+6);
+        document.write(Date());
+    </script>
+
+   
+    <!-- 如果在文档已完成加载后执行 document.write，整个 HTML 页面将被覆盖 -->
+    <button onclick="myfun2">点我</button>
+
+    <script>
+        function myfun2(){
+            document.write(Date());
+        }
+    </script>
+
+
+
+    <!-- 对代码进行折行 -->
+    <script>
+        document.write("Hello \
+        World")
+
+        // 错误的换行：
+        // document.write \
+        // ("Hello World!")
+
+        document.get
+    </script>
+    
+    
+
+
+
+</body>
+</html>

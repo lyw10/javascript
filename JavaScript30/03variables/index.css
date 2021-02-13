@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background: #193549;
+    color: white;
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+:root{
+    --base:#ffc600;
+    --spacing:1rem;
+    --blur:1rem;
+}
+
+h1 span{
+    color: var(--base);
+}
+
+.controls{
+    margin: 3rem 0;
+}
+
+img{
+    padding: var(--spacing);
+    background-color: var(--base);
+    filter: blur(var(--blur));
+}
+
+input{
+    width: 10rem;
+}
