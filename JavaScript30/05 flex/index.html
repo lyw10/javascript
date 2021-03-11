@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="panels">
+        <div class="panel panel1">
+            <p>Hey</p>
+            <h1>Let's</h1>
+            <p>Dance</p>
+        </div>
+        <div class="panel panel2">
+            <p>Lorem</p>
+            <h1>Hello</h1>
+            <p>World</p>
+        </div>
+        <div class="panel panel3">
+            <p>Nice</p>
+            <h1>to</h1>
+            <p>Meet</p>
+        </div>
+        <div class="panel panel4">
+            <p>You</p>
+            <h1>Me</h1>
+            <p>Her</p>
+        </div>
+        <div class="panel panel5">
+            <p>Him</p>
+            <h1>He</h1>
+            <p>She</p>
+        </div>
+    </div>
+
+
+    <script>
+        const panels = document.querySelectorAll('.panel');
+
+        function toggleOpen(){
+            this.classList.toggle('open'); 
+        }
+
+        function toggleActive(e){
+            console.log(e.propertyName);
+            if(e.propertyName.includes('font-size')){
+                this.classList.toggle('open-active');
+            }  
+        }
+        
+        panels.forEach(e => e.addEventListener('click', toggleOpen));
+        panels.forEach(e => e.addEventListener('transitionend', toggleActive));
+    </script>
+</body>
+</html>
